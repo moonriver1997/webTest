@@ -1,0 +1,92 @@
+@import url("decoration.css");
+:root {
+    --menu-width: 360px;
+    --header-height: 8vh;
+}
+
+/*menu*/
+/*for normal type*/
+#menu-1:checked ~ div [for="menu-1"] .menuIcon,
+#menu-2:checked ~ div [for="menu-2"] .menuIcon,
+#menu-3:checked ~ div [for="menu-3"] .menuIcon,
+#menu-4:checked ~ div [for="menu-4"] .menuIcon,
+#menu-5:checked ~ div [for="menu-5"] .menuIcon,
+#menu-6:checked ~ div [for="menu-6"] .menuIcon{
+    background-color: var(--main-bgColor);
+}
+/*for repeat type initial setting*/
+input[name="menu"]:checked + .menuIcon{
+    background-color: var(--main-bgColor);
+}
+.menu{
+    position: fixed;
+    
+    width: var(--menu-width);
+    height: 100%;
+    
+    padding-top: var(--header-height);
+    
+    background-color: var(--menu-bgColor);
+    
+    text-align: center;
+}
+.menuIcon{
+    
+/*    margin: 10px 20px;*/
+    padding-top: 38px;
+    padding-bottom: 38px;
+    
+    background-color: transparent;
+}
+.menuIcon img{
+    position: relative;
+    
+    width: 50px;
+    height: 50px;
+    
+}
+.menuIcon .menuName{
+    display: inline-block;
+    
+    color: var(--menu-contentColor);
+}
+
+/*header*/
+.header{
+    position: fixed;
+    left: var(--menu-width);
+    
+    height: var(--header-height);
+    width: calc(100% - var(--menu-width));
+    
+}
+.headerTitle{
+    float: left;
+    
+    padding-left: 26px;
+    padding-top: 20px;
+}
+.headerIcon{
+    float: right;
+    
+    padding-top: 19px;
+    margin-right: 10px;
+}
+.headerIcon img{
+    width: 40px;
+    height: 40px;
+}
+
+/*content*/
+
+.content{
+    position: fixed;
+    left: var(--menu-width);
+    top: var(--header-height);
+    
+    width: calc(100% - var(--menu-width));
+    height: calc(100% - var(--header-height));
+    
+    
+    background-color:  var(--main-bgColor);
+}

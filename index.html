@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <!-- Normal setting -->
+        <title>template</title>
+        <meta charset="utf-8">
+        <link href="favicon.ico" rel="shortcut icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Framework -->
+        <script src="framework/angular.min.js"></script>
+        <script src="framework/angular-ui-router.min.js"></script>
+        <script src="framework/jquery-2.1.3.min.js"></script>
+        <script src="framework/ui-bootstrap-tpls-0.12.0.min.js"></script>
+        <!-- Libary -->
+        <script src="libary/sha512.js"></script>
+        <!-- Script -->
+        <script src="script.js"></script>
+        <script src="com/controllers/mainController.js"></script>
+        <script src="com/controllers/contentController.js"></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="com/views/css/main.css">
+        <link rel="stylesheet" href="com/views/css/decoration.css">
+        <link rel="stylesheet" href="com/views/css/content.css">
+    </head>
+    <body>
+        <div ng-app="myApp">
+            <div ui-view></div>
+        </div>
+    </body>
+</html>

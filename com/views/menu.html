@@ -1,0 +1,61 @@
+<!--repeat html-->
+<div>
+    <a href="{{getMenuUrl($index)}}" ng-repeat="menuItem in root.menuItem" id="menu-{{$index}}">
+        <input type="radio" name="menu" id="menu-{{menuItem}}">
+        <div class="menuIcon">
+            <img ng-src="./image/icon/{{menuItem}}_w.png">
+            <div class="menuName font_24">{{menuItem}}</div>
+        </div>
+    </a>
+</div>
+
+<!--normal html-->
+<!--
+<input id="menu-1" type="radio" name="menu" checked>
+<input id="menu-2" type="radio" name="menu">
+<input id="menu-3" type="radio" name="menu">
+<input id="menu-4" type="radio" name="menu">
+<input id="menu-5" type="radio" name="menu">
+<input id="menu-6" type="radio" name="menu">
+
+<div>
+    <label for="menu-1">
+        <div class="menuIcon">
+            <img src="./image/pineapple_w.png">
+            <div class="menuName font_24">CCU</div>
+        </div>
+    </label>
+    <label for="menu-2">
+        <div class="menuIcon">
+            <img src="./image/global_w.png">
+            <div class="menuName font_24">Earth</div>
+        </div>
+    </label>
+    <label for="menu-3">
+        <div class="menuIcon">
+            <img src="./image/experiment_w.png">
+            <div class="menuName font_24">Experiment</div>
+        </div>
+    </label>
+    <label for="menu-4">
+        <div class="menuIcon">
+            <img src="./image/prototype_w.png">
+            <div class="menuName font_24">Coding</div>
+        </div>
+    </label>
+    <label for="menu-5">
+        <div class="menuIcon">
+            <img src="./image/document_w.png">
+            <div class="menuName font_24">File</div>
+        </div>
+    </label>
+    <label for="menu-6">
+        <div class="menuIcon">
+            <img src="./image/graph_w.png">
+            <div class="menuName font_24">Charts</div>
+        </div>
+    </label>
+</div>
+-->
+
+

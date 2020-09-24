@@ -1,0 +1,41 @@
+:root {
+    --menu-bgColor: #1a5276;
+    --main-bgColor: #7FB3D5;
+    
+    --line-borderColor: #D2DDDB;
+    
+    --menu-TitleColor: #4AD8BE;
+    --menu-contentColor: #FFFFFF;
+}
+/*font*/
+.font_18{
+    font-size: 18px;
+}
+.font_24{
+    font-size: 24px;
+}
+.font_36{
+    font-size: 36px;
+}
+.font_56{
+    font-size: 56px;
+}
+/*background color*/
+.bgColor_red{
+    background-color: #FF5733;
+}
+.bgColor_orange{
+    background-color: #FFC300;
+}
+.bgColor_green{
+    background-color: #DAF7A6;
+}
+.bgColor_blue{
+    background-color: #31DFFA;
+}
+.bgColor_purple{
+    background-color: #AA93FE;
+}
+.bgColor_menu{
+    background-color: #4B6076;
+}

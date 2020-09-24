@@ -1,0 +1,39 @@
+@import url("decoration.css");
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Monospace;
+}
+
+label,
+button,
+a{
+    cursor: pointer;
+}
+
+a,
+input{
+    text-decoration:none;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+}
+
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked),
+[type="radio"]:checked,
+[type="radio"]:not(:checked){
+    position: absolute;
+    left: -9999px;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
